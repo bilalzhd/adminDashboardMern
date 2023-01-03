@@ -10,11 +10,11 @@ export const api = createApi({
             providesTags: ["User"],
         }),
         getProducts: build.query({
-            query: () => "client/products",
+            query: () => "https://admin-backend-vnjm.onrender.com/client/products",
             providesTags: ["Products"],
         }),
         getCustomers: build.query({
-            query: () => "client/customers",
+            query: () => "https://admin-backend-vnjm.onrender.com/client/customers",
             providesTags: ["Customers"],
         }),
         getTransactions: build.query({
@@ -26,11 +26,11 @@ export const api = createApi({
             providesTags: ["Transactions"],
         }),
         getGeography: build.query({
-            query: () => "client/geography",
+            query: () => "https://admin-backend-vnjm.onrender.com/client/geography",
             providesTags: ["Geography"],
         }),
         getSales: build.query({
-            query: () => "sales/sales",
+            query: () => "https://admin-backend-vnjm.onrender.com/sales/sales",
             providesTags: ["Sales"],
         }),
         getAdmins: build.query({
@@ -42,7 +42,7 @@ export const api = createApi({
             providesTags: ["Performance"],
         }),
         getDashboardStats: build.query({
-            query: () => `general/dashboard`,
+            query: () => `https://admin-backend-vnjm.onrender.com/general/dashboard`,
             providesTags: ["Dashboard"],
         }),
 
