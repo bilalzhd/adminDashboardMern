@@ -34,7 +34,7 @@ export const api = createApi({
             providesTags: ["Sales"],
         }),
         getAdmins: build.query({
-            query: () => "management/admins",
+            query: () => "https://admin-backend-vnjm.onrender.com/management/admins",
             providesTags: ["Admins"],
         }),
         getUserPerformance: build.query({
