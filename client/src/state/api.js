@@ -6,7 +6,7 @@ export const api = createApi({
     tagTypes: ["User", "Products", "Customers", "Transactions", "Geography", "Sales", "Admins", "Performance", "Dashboard"],
     endpoints: (build) => ({
         getUser: build.query({
-            query: (id) => `general/user/${id}`,
+            query: (id) => `https://admin-backend-vnjm.onrender.com/general/user/${id}`,
             providesTags: ["User"],
         }),
         getProducts: build.query({
@@ -19,7 +19,7 @@ export const api = createApi({
         }),
         getTransactions: build.query({
             query: ({ page, pageSize, sort, search }) => ({
-                url: "client/transactions",
+                url: "https://admin-backend-vnjm.onrender.com/client/transactions",
                 method: "GET",
                 params: { page, pageSize, sort, search }
             }),
